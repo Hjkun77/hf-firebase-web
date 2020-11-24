@@ -1,0 +1,13 @@
+{
+    "name": "Hackfest Firebase Web",
+    "short_name": "HFFirebaseWeb",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "lang": "en-US",
+    "description": "Hackfest 2020: Firebase Web Project",
+    "prefer_related_applications": false,
+    "theme_color": "#fff",
+    "scope": "/",
+    "orientation": "portrait-primary"
+  }
