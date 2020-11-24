@@ -5,9 +5,65 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Hackfest: Firebase Web</title>
 		<link rel="manifest" href="manifest.json" />
-		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<h3>Hackfest 2020: Firebase Web Project</h3>
+		<div id="container">
+			<h1>Hackfest: Firebase Web</h1>
+			<br />
+			<br />
+			<h3>Email and Password Authentication</h3>
+			<div>
+				<p>
+					Enter an email and password below and either sign in to an existing
+					account or sign up
+				</p>
+
+				<input type="text" id="email" name="email" placeholder="Email" />
+				<input
+					type="password"
+					id="password"
+					name="password"
+					placeholder="Password"
+				/>
+				<br /><br />
+				<button disabled id="quickstart-sign-in" name="signin">Sign In</button>
+				<button id="quickstart-sign-up" name="signup">Sign Up</button>
+				<button disabled id="quickstart-verify-email" name="verify-email">
+					Send Email Verification
+				</button>
+				<button id="quickstart-password-reset" name="verify-email">
+					Send Password Reset Email
+				</button>
+				<br /><br />
+				<!-- Container where we'll display the user details -->
+				<div>
+					Firebase sign-in status:
+					<span id="quickstart-sign-in-status">Unknown</span>
+					<div>Firebase auth <code>currentUser</code> object value:</div>
+					<pre><code id="quickstart-account-details">null</code></pre>
+				</div>
+
+				<br />
+				<br />
+				<h3>Google Authentication</h3>
+				<p>Sign in with your Google account below.</p>
+
+				<!-- Button that handles sign-in/sign-out -->
+				<button disabled id="quickstart-sign-in-google">
+					Sign in with Google
+				</button>
+				<br /><br />
+				<!-- Container where we'll display the user details -->
+				<div>
+					Firebase sign-in status:
+					<span id="quickstart-sign-in-google-status">Unknown</span>
+					<div>Firebase auth <code>currentUser</code> object value:</div>
+					<pre><code id="quickstart-google-account-details">null</code></pre>
+					<div>Google OAuth Access Token:</div>
+					<pre><code id="quickstart-oauthtoken">null</code></pre>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
